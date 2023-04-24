@@ -1,1 +1,5 @@
 https://fonts.google.com/
+https://app.logo.com/
+https://react-icons.github.io/
+
+
