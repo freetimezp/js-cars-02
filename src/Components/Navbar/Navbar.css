@@ -32,10 +32,6 @@
   font-weight: 600;
   font-size: 25px;
 }
-.header .showNavbar {
-  top: 8rem;
-  transition: 0.5s ease-in-out;
-}
 @media screen and (max-width: 768px) {
   .header .navbar {
     position: absolute;
@@ -49,6 +45,7 @@
     text-align: center;
     padding: 2rem;
     z-index: 2000px;
+    transition: 0.5s ease-in-out;
   }
   .header .navbar .closeIcon {
     position: absolute;
@@ -85,4 +82,8 @@
   .header .menu .listItem:hover a {
     color: var(--whiteColor);
   }
+}
+.header .showNavbar {
+  top: 9rem;
+  transition: 0.5s ease-in-out;
 }/*# sourceMappingURL=Navbar.css.map */
