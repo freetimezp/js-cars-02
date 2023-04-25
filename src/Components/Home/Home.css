@@ -1,1 +1,50 @@
-/*# sourceMappingURL=Home.css.map */
+.home {
+  padding-top: 9rem;
+}
+.home .secContainer {
+  padding: 0 1.5rem;
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+}
+.home .secContainer .homeText .homeSpan {
+  color: var(--textColor);
+  font-weight: 400;
+  font-size: 15px;
+}
+.home .secContainer .homeText .homeTitle {
+  color: var(--blackColor);
+  font-weight: 700;
+  font-size: 30px;
+}
+.home .secContainer .homeText .btns {
+  gap: 1.5rem;
+  justify-content: center;
+}
+.home .secContainer .homeText .btns .btn {
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  font-size: 12px;
+  border: 1px solid var(--primaryColor);
+  color: var(--primaryColor);
+}
+.home .secContainer .homeText .btns .btn:hover {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+.home .secContainer .homeText .btns .btn.primaryBtn {
+  color: var(--whiteColor);
+}
+.home .secContainer .homeText .btns .btn.primaryBtn:hover {
+  background: var(--whiteColor);
+  color: var(--primaryColor);
+}
+.home .secContainer .homeImage {
+  margin: auto;
+}
+.home .secContainer .homeImage img {
+  width: 100%;
+  max-width: 350px;
+}/*# sourceMappingURL=Home.css.map */
