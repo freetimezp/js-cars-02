@@ -103,3 +103,14 @@
         transition: 0.5s ease-in-out;
     }
 }
+
+.addBg {
+    background: var(--secondaryColor);
+    box-shadow: none;
+
+    .logoDiv {
+        .logo {
+            width: 30px;
+        }
+    }
+}

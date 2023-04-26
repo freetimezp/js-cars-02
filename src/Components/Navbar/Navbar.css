@@ -86,4 +86,12 @@
 .header .showNavbar {
   top: 9rem;
   transition: 0.5s ease-in-out;
+}
+
+.addBg {
+  background: var(--secondaryColor);
+  box-shadow: none;
+}
+.addBg .logoDiv .logo {
+  width: 30px;
 }/*# sourceMappingURL=Navbar.css.map */
