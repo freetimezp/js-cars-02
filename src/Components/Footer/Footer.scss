@@ -1,0 +1,46 @@
+.footer {
+    padding-top: 4rem;
+
+    .footerContainer {
+        .footerMenuDiv {
+            padding: 2rem;
+            background: var(--greyColor);
+            border-radius: 10px;
+            gap: 1.5rem;
+
+            .singleGrid {
+                .footerTitle {
+                    display: block;
+                    padding-bottom: 0.5rem;
+                    font-size: 16px;
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+
+                .footerList {
+                    gap: 5px;
+
+                    .footerLink {
+                        color: var(--textColor);
+
+                        &:hover {
+                            color: var(--blackColor);
+                            transform: translateX(5px);
+                        }
+                    }
+                }
+            }
+        }
+
+        .lowerSection {
+            padding: 1rem;
+            text-align: center;
+
+            span {
+                font-weight: 700;
+                font-style: italic;
+                flex: 10px;
+            }
+        }
+    }
+}
