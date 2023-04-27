@@ -38,4 +38,52 @@
 }
 .sellers .secContainer .sellersContainer .singleSeller:hover .imgDiv img {
   transform: scale(1.5);
+}
+
+@media screen and (min-width: 520px) {
+  .sellers .secContainer .secHeading {
+    margin-top: 2rem;
+  }
+  .sellers .secContainer .secHeading .secTitle {
+    font-size: 25px;
+  }
+  .sellers .secContainer .secHeading p {
+    font-size: 18px;
+  }
+  .sellers .secContainer .sellersContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .sellers .secContainer .sellersContainer .singleSeller {
+    gap: 1.5rem;
+  }
+  .sellers .secContainer .sellersContainer .singleSeller:hover {
+    background: rgb(237, 237, 237);
+  }
+  .sellers .secContainer .sellersContainer .singleSeller:hover .imgDiv {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgb(168, 143, 243);
+  }
+  .sellers .secContainer .sellersContainer .singleSeller:hover .imgDiv img {
+    transform: rotateY(180deg);
+  }
+}
+@media screen and (min-width: 840px) {
+  .sellers .secContainer .secHeading {
+    padding: 1.5rem 0;
+  }
+  .sellers .secContainer .secHeading .secTitle {
+    font-size: 30px;
+  }
+  .sellers .secContainer .secHeading p {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sellers .secContainer .sellersContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }/*# sourceMappingURL=Sellers.css.map */

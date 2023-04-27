@@ -19,6 +19,7 @@
 }
 .footer .footerContainer .footerMenuDiv .singleGrid .footerList .footerLink {
   color: var(--textColor);
+  cursor: pointer;
 }
 .footer .footerContainer .footerMenuDiv .singleGrid .footerList .footerLink:hover {
   color: var(--blackColor);
@@ -32,4 +33,40 @@
   font-weight: 700;
   font-style: italic;
   flex: 10px;
+}
+
+@media screen and (min-width: 520px) {
+  .footer .footerContainer .footerMenuDiv {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer .footerContainer .footerMenuDiv .singleGrid .footerTitle {
+    font-size: 17px;
+  }
+  .footer .footerContainer .footerMenuDiv .singleGrid .footerList {
+    gap: 5px;
+  }
+  .footer .footerContainer .footerMenuDiv .singleGrid .footerList .footerLink {
+    color: var(--textColor);
+  }
+  .footer .footerContainer .lowerSection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .footerContainer .lowerSection span {
+    text-align: right;
+  }
+}
+@media screen and (min-width: 770px) {
+  .footer .footerContainer .footerMenuDiv {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 940px) {
+  .footer .footerContainer {
+    padding: 2rem 0;
+  }
+  .footer .footerContainer .footerMenuDiv {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }/*# sourceMappingURL=Footer.css.map */

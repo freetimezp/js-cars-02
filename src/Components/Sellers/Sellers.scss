@@ -50,3 +50,74 @@
         }
     }
 }
+
+@media screen and (min-width: 520px) {
+    .sellers {
+        .secContainer {
+            .secHeading {
+                margin-top: 2rem;
+
+                .secTitle {
+                    font-size: 25px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .sellersContainer {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+
+                .singleSeller {
+                    gap: 1.5rem;
+
+                    &:hover {
+                        background: rgb(237, 237, 237);
+
+                        .imgDiv {
+                            width: 80px;
+                            height: 80px;
+                            padding: 10px;
+                            border-radius: 10px;
+                            background: rgb(168, 143, 243);
+
+                            img {
+                                transform: rotateY(180deg);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .sellers {
+        .secContainer {
+            .secHeading {
+                padding: 1.5rem 0;
+
+                .secTitle {
+                    font-size: 30px;
+                }
+
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sellers {
+        .secContainer {
+            .sellersContainer {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+}

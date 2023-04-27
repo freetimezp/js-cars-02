@@ -88,4 +88,19 @@ img {
 .secTitle {
   color: var(--blackColor);
   font-size: 20px;
+}
+
+@media screen and (min-width: 940px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  .section {
+    padding: 6rem 0rem 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 85%;
+  }
 }/*# sourceMappingURL=App.css.map */

@@ -94,4 +94,56 @@
 }
 .addBg .logoDiv .logo {
   width: 30px;
+}
+
+@media screen and (min-width: 520px) {
+  .header .signUp .text {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+  .header .signUp .toggleNavbarIcon {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 770px) {
+  .header .navbar .closeIcon {
+    display: none;
+  }
+  .header .navbar .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .header .navbar .menu .listItem {
+    padding: 0.3rem 1rem;
+    border-radius: 3px;
+  }
+  .header .navbar .menu .listItem a {
+    color: var(--textColor);
+    font-size: 15px;
+  }
+  .header .navbar .menu .listItem:hover {
+    background: var(--primaryColor);
+  }
+  .header .navbar .menu .listItem:hover a {
+    color: var(--whiteColor);
+  }
+  .header .signUp .toggleNavbarIcon {
+    display: none;
+  }
+}
+@media screen and (min-width: 1064px) {
+  .header {
+    padding: 1rem 7rem;
+  }
+  .header .navbar .menu .listItem a {
+    font-size: 17px;
+  }
+  .header .signUp .text {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .header .navbar .menu .listItem {
+    margin: 0 0.8rem;
+  }
 }/*# sourceMappingURL=Navbar.css.map */
