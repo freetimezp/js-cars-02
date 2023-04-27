@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import { AiFillStar } from 'react-icons/ai';
 
@@ -11,11 +13,20 @@ import user1 from '../../Assets/images/reviewer-1.jpg';
 import user2 from '../../Assets/images/reviewer-2.jpg';
 import user3 from '../../Assets/images/reviewer-3.jpg';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const Review = () => {
+    useEffect(() => {
+        Aos.init({
+            duration: 3000,
+        });
+    }, []);
+
     return (
         <div className='review section'>
             <div className="secContainer container">
-                <div className="secHeading flex">
+                <div className="secHeading flex" data-aos="fade-up">
                     <h3 className="secTitle">Recent Reviews</h3>
                     <div className="navBtns flex">
                         <BsArrowLeftShort className='icon leftIcon' />
@@ -24,7 +35,7 @@ const Review = () => {
                 </div>
 
                 <div className="reviewsContainer grid">
-                    <div className="singleReview grid">
+                    <div className="singleReview grid" data-aos="fade-up">
                         <div className="imgDiv">
                             <img src={review1} alt="review" />
                         </div>
@@ -51,7 +62,7 @@ const Review = () => {
                         </div>
                     </div>
 
-                    <div className="singleReview grid">
+                    <div className="singleReview grid" data-aos="fade-up">
                         <div className="imgDiv">
                             <img src={review2} alt="review" />
                         </div>
@@ -78,7 +89,7 @@ const Review = () => {
                         </div>
                     </div>
 
-                    <div className="singleReview grid">
+                    <div className="singleReview grid" data-aos="fade-up">
                         <div className="imgDiv">
                             <img src={review3} alt="review" />
                         </div>

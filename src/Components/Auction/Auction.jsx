@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './Auction.css';
 
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
@@ -9,6 +9,9 @@ import auction3 from '../../Assets/images/auction-3.jpg';
 import auction4 from '../../Assets/images/auction-4.jpg';
 import auction5 from '../../Assets/images/auction-5.jpg';
 import auction6 from '../../Assets/images/auction-6.jpg';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Auction = () => {
     const items = [
@@ -69,10 +72,16 @@ const Auction = () => {
 
     const [activeId, setActiveId] = useState();
 
+    useEffect(() => {
+        Aos.init({
+            duration: 2000,
+        });
+    }, []);
+
     return (
         <div className='auction section'>
             <div className="secContainer container">
-                <div className="secHeading flex">
+                <div className="secHeading flex" data-aos="fade-up">
                     <h3 className="secTitle">Active Auctions</h3>
                     <div className="navBtns flex">
                         <BsArrowLeftShort className='icon leftIcon' />
@@ -82,7 +91,7 @@ const Auction = () => {
 
                 <div className="carContainer grid">
                     {items.map((item) => (
-                        <div className={`singleCar grid ${activeId === item.id ? " singleCarActive" : ""}`} key={item.id} onClick={() => setActiveId(item.id)}>
+                        <div className={`singleCar grid ${activeId === item.id ? " singleCarActive" : ""}`} key={item.id} onClick={() => setActiveId(item.id)} data-aos="fade-up">
                             <div className="imgDiv">
                                 <img src={item.image} alt="car" />
                             </div>

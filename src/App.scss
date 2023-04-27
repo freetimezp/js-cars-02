@@ -108,3 +108,18 @@ img {
         width: 85%;
     }
 }
+
+::selection {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: var(--secondaryColor);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primaryColor);
+    border-radius: 3px;
+}

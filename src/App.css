@@ -103,4 +103,22 @@ img {
   .container {
     width: 85%;
   }
+}
+::-moz-selection {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+::selection {
+  background: var(--primaryColor);
+  color: var(--whiteColor);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--secondaryColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primaryColor);
+  border-radius: 3px;
 }/*# sourceMappingURL=App.css.map */

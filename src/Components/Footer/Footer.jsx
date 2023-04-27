@@ -1,11 +1,22 @@
+import { useEffect } from 'react';
+
 import './Footer.css';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const Footer = () => {
+    useEffect(() => {
+        Aos.init({
+            duration: 2000,
+        });
+    }, []);
+
     return (
         <div className='footer'>
             <div className="footerContainer container">
                 <div className="footerMenuDiv grid">
-                    <div className="singleGrid">
+                    <div className="singleGrid" data-aos="fade-up">
                         <span className="footerTitle">About</span>
                         <ul className="footerList grid">
                             <li className="footerLink">How it works</li>
@@ -15,7 +26,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="singleGrid">
+                    <div className="singleGrid" data-aos="fade-up">
                         <span className="footerTitle">Become Seller</span>
                         <ul className="footerList grid">
                             <li className="footerLink">Add Vehicles</li>
@@ -25,7 +36,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="singleGrid">
+                    <div className="singleGrid" data-aos="fade-up">
                         <span className="footerTitle">Support</span>
                         <ul className="footerList grid">
                             <li className="footerLink">Covid-19</li>
@@ -35,7 +46,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className="singleGrid">
+                    <div className="singleGrid" data-aos="fade-up">
                         <span className="footerTitle">About</span>
                         <ul className="footerList grid">
                             <li className="footerLink">How it works</li>

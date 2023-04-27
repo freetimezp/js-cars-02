@@ -39,6 +39,9 @@
   .footer .footerContainer .footerMenuDiv {
     grid-template-columns: repeat(2, 1fr);
   }
+  .footer .footerContainer .footerMenuDiv .singleGrid {
+    margin: auto;
+  }
   .footer .footerContainer .footerMenuDiv .singleGrid .footerTitle {
     font-size: 17px;
   }
